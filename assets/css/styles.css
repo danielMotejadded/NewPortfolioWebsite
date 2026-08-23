@@ -18,7 +18,7 @@
          -> Choose any color 
          -> Copy the color mode (HSL)
   */
-  --hue: 2194;
+  --hue: 194;
   --first-color: hsl(var(--hue), 60%, 64%);
   --first-color-alt: hsl(var(--hue), 80%, 56%);
   --first-color-alt-2: hsl(var(--hue), 60%, 56%);
@@ -204,7 +204,7 @@ img {
 }
 
 /* Hide the custom cursor */
-.hide-cursor{
+.hide-cursor {
   width: 0;
   height: 0;
 }
@@ -975,9 +975,12 @@ img {
   }
   .projects__container {
     max-width: 1380px;
+    display: grid;
+    justify-items: center;
   }
   .projects__card {
     width: 440px;
+
     padding: 2.5rem;
     border-radius: 4rem;
   }
