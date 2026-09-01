@@ -48,7 +48,7 @@ const tabContents = document.querySelectorAll("[data-content]");
 tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
     const targetSelector = tab.dataset.target;
-    console.log(targetSelector);
+
     const targetContent = document.querySelector(targetSelector);
 
     tabContents.forEach((content) => content.classList.remove("work-active"));
@@ -102,30 +102,35 @@ const scrollActive = () => {
 };
 window.addEventListener("scroll", scrollActive);
 /*=============== CUSTOM CURSOR ===============*/
+const width = window.innerWidth;
 const cursor = document.querySelector(".cursor");
-let mouseX = 0,
-  mouseY = 0;
 
-const cursorMove = () => {
+let mouseX = 0;
+let mouseY = 0;
+
+const updateCursor = () => {
   cursor.style.left = `${mouseX}px`;
   cursor.style.top = `${mouseY}px`;
   cursor.style.transform = "translate(-50%, -50%)";
-  requestAnimationFrame(cursorMove);
+
+  requestAnimationFrame(updateCursor);
 };
 
 document.addEventListener("mousemove", (e) => {
-  console.log("Hello");
   mouseX = e.clientX;
   mouseY = e.clientY;
 });
-cursorMove();
-/* Hide custom cursor on links */
 
-const a = document.querySelectorAll("a");
-a.forEach((item) => {
-  item.addEventListener("mouseover", () => {
+updateCursor();
+
+/* Hide custom cursor on links */
+const links = document.querySelectorAll("a");
+
+links.forEach((item) => {
+  item.addEventListener("mouseenter", () => {
     cursor.classList.add("hide-cursor");
   });
+
   item.addEventListener("mouseleave", () => {
     cursor.classList.remove("hide-cursor");
   });

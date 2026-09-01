@@ -210,10 +210,7 @@ img {
 }
 
 /* Hide the custom cursor */
-.hide-cursor {
-  width: 0;
-  height: 0;
-}
+
 /*=============== HEADER & NAV ===============*/
 .header {
   position: fixed;
@@ -1088,3 +1085,8 @@ img {
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
 
 /* Custom cursor is hidden for mobile devices */
+@media (hover: none), (pointer: coarse) {
+  .cursor {
+    display: none;
+  }
+}
