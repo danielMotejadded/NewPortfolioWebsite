@@ -19,7 +19,7 @@ jobs:
           password: ${{ secrets.HOMEPL_PASSWORD }}
           protocol: ftp
           port: 21
-          server-dir: /public_html/Portfolio
+          server-dir: /public_html/Portfolio/
           exclude: |
             **/.git*
             **/.git*/**
