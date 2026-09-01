@@ -86,6 +86,7 @@ button {
 body {
   background-color: var(--body-color);
   color: var(--text-color);
+  margin: 0;
 }
 
 button {
@@ -138,6 +139,7 @@ img {
   text-align: center;
   justify-content: center;
   font-size: var(--h1-font-size);
+
   margin-bottom: 3rem;
 }
 
@@ -465,7 +467,8 @@ img {
   bottom: 0.5rem;
 }
 .about__profil {
-  width: 220px;
+  width: 200px;
+  margin: auto;
 }
 .about__shadow {
   width: 100%;
@@ -480,8 +483,9 @@ img {
 }
 /*=============== PROJECTS ===============*/
 .projects .section__title {
-  text-align: initial;
-  margin-left: 5rem;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
 }
 .projects__card {
   position: relative;
@@ -703,8 +707,8 @@ img {
 }
 .contact__content {
   display: flex;
-  padding: 0 80px 0 80px ;
-  justify-content: space-between;
+  padding: 0 80px 0 80px;
+  justify-content: center;
 }
 
 .contact__info {
@@ -793,11 +797,14 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 320px) {
-  .container {
-    margin-inline: 1rem;
-  }
 
+@media screen and (max-width: 540px) {
+  .container {
+    /* margin-inline: 1rem; */
+  }
+  .about__profil {
+    width: 150px;
+  }
   .blob,
   .home__image .blob-animate {
     width: 220px;
@@ -811,6 +818,16 @@ img {
   .work__tabs {
     padding-inline: 1rem;
   }
+  .contact__title {
+    margin-top: 1rem;
+  }
+  .contact__content {
+    display: flex;
+    padding-right: 0px;
+    padding-left: 0px;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 /* For medium devices */
@@ -818,6 +835,17 @@ img {
   .home__container {
     width: 460px;
     margin-inline: auto;
+  }
+  .about__profil {
+    width: 180px;
+  }
+  .contact__title {
+    margin-top: 1rem;
+  }
+  .contact__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .about__container,
   .work__container {
@@ -882,6 +910,11 @@ img {
   .nav__list {
     flex-direction: row;
     column-gap: 5.5rem;
+  }
+  .contact__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .home__container {
@@ -1032,7 +1065,7 @@ img {
     font-size: var(--h2-font-size);
   }
   .contact__content {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .contact__info {
     row-gap: 1.5rem;
