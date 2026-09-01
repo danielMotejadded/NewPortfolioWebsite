@@ -126,6 +126,9 @@ img {
   display: grid;
   gap: 1.5rem;
 }
+.flex {
+  display: flex;
+}
 
 .section {
   padding-block: 5rem 1rem;
@@ -450,6 +453,7 @@ img {
 .about__image {
   position: relative;
   justify-self: center;
+  width: 300px;
 }
 .about__image .blob-animate:nth-child(1) {
   top: 1.5rem;
@@ -697,7 +701,9 @@ img {
   cursor: pointer;
 }
 .contact__content {
-  row-gap: 3rem;
+  display: flex;
+  padding: 0 80px 0 80px ;
+  justify-content: space-between;
 }
 
 .contact__info {
