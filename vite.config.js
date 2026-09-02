@@ -5,7 +5,7 @@ import { defineConfig } from "vite";
 export default defineConfig({
   plugins: [react()],
   base: "/Portfolio/",
-  css: {
-    minify: "esbuild", // <-- use esbuild instead of lightningcss
+  build: {
+    cssMinify: "esbuild",
   },
 });
