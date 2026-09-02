@@ -87,6 +87,7 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   margin: 0;
+  margin: 0;
 }
 
 button {
@@ -139,6 +140,7 @@ img {
   text-align: center;
   justify-content: center;
   font-size: var(--h1-font-size);
+
 
   margin-bottom: 3rem;
 }
@@ -210,6 +212,7 @@ img {
 }
 
 /* Hide the custom cursor */
+
 
 /*=============== HEADER & NAV ===============*/
 .header {
@@ -466,6 +469,8 @@ img {
 .about__profil {
   width: 200px;
   margin: auto;
+  width: 200px;
+  margin: auto;
 }
 .about__shadow {
   width: 100%;
@@ -480,6 +485,9 @@ img {
 }
 /*=============== PROJECTS ===============*/
 .projects .section__title {
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
   text-align: center;
   justify-content: center;
   padding: 20px;
@@ -706,6 +714,8 @@ img {
   display: flex;
   padding: 0 80px 0 80px;
   justify-content: center;
+  padding: 0 80px 0 80px;
+  justify-content: center;
 }
 
 .contact__info {
@@ -796,8 +806,14 @@ img {
 /* For small devices */
 
 @media screen and (max-width: 540px) {
+
+@media screen and (max-width: 540px) {
   .container {
     /* margin-inline: 1rem; */
+    /* margin-inline: 1rem; */
+  }
+  .about__profil {
+    width: 150px;
   }
   .about__profil {
     width: 150px;
@@ -825,6 +841,16 @@ img {
     flex-direction: column;
     justify-content: center;
   }
+  .contact__title {
+    margin-top: 1rem;
+  }
+  .contact__content {
+    display: flex;
+    padding-right: 0px;
+    padding-left: 0px;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 /* For medium devices */
@@ -832,6 +858,17 @@ img {
   .home__container {
     width: 460px;
     margin-inline: auto;
+  }
+  .about__profil {
+    width: 180px;
+  }
+  .contact__title {
+    margin-top: 1rem;
+  }
+  .contact__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .about__profil {
     width: 180px;
@@ -907,6 +944,11 @@ img {
   .nav__list {
     flex-direction: row;
     column-gap: 5.5rem;
+  }
+  .contact__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   .contact__content {
     display: flex;
@@ -1062,6 +1104,7 @@ img {
     font-size: var(--h2-font-size);
   }
   .contact__content {
+    grid-template-columns: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
   }
   .contact__info {
