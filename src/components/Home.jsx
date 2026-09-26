@@ -60,7 +60,7 @@ function Home() {
         </div>
 
         <a
-          href="/assets/pdf/Anid-Cv.pdf"
+          href="../../public/pdf/Daniel_Motejadded_CV-en.pdf"
           download
           target="_blank"
           rel="noreferrer"
