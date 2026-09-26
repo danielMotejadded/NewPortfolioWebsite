@@ -5,8 +5,8 @@ function CustomCursor() {
     const cursor = document.querySelector(".cursor");
 
     const moveCursor = (event) => {
-      cursor.style.left = `${event.clientX}px`;
-      cursor.style.top = `${event.clientY}px`;
+      cursor.style.left = `${event.clientX -25}px`;
+      cursor.style.top = `${event.clientY -25}px`;
     };
 
     window.addEventListener("mousemove", moveCursor);
