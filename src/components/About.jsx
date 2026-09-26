@@ -21,7 +21,7 @@ function About() {
           </p>
 
           <a
-            href="/assets/pdf/Anid-Cv.pdf"
+            href="./assets/Daniel_Motejadded_CV-en.pdf"
             className="button"
             download
             target="_blank"
