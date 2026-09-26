@@ -14,7 +14,6 @@ function App() {
 
       <main className="main">
         <CustomCursor />
-
         <Home />
         <About />
         <Projects />
