@@ -4,7 +4,7 @@ const projects = [
     type: "Web",
     title: "Ollama UI",
     technologies: "React, Vite, TailwindCSS, Ollama API",
-    image: "/assets/img/ollama_project.png",
+    image: "../../public/img/Ollama.png",
     github: "https://github.com/danielMotejadded/Ollama-UI",
   },
 ];
